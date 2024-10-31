@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Document</title>
+</head>
+<form id="resumeForm" aria-labelledby="resumeForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required aria-required="true" />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-required="true" />
+
+    <hr />
+    <h3>Education</h3>
+    <label for="degree">Degree:</label>
+    <input type="text" id="degree" name="degree" placeholder="Enter your degree name" required aria-required="true" />
+
+    <label for="institution">University or School:</label>
+    <input type="text" id="institution" name="institution" placeholder="XYZ University or XYZ School" />
+
+    <hr />
+    <h3>Work Experience</h3>
+    <label for="jobTitle">Job Title:</label>
+    <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter your job title" required aria-required="true" />
+
+    <label for="company">Company:</label>
+    <input type="text" id="company" name="company" placeholder="XYZ Company" />
+
+    <hr />
+    <h3>Skills</h3>
+    <label for="skills">Skills:</label>
+    <input type="text" id="skills" name="skills" placeholder="Enter your skills" required aria-required="true" />
+
+    <button type="submit">Generate Resume</button>
+</form>
+
+<div id="resumeOutput" style="display: none" aria-live="polite">
+    <!-- Generated resume will appear here -->
+</div>
+
+<!-- Buttons for copying the URL and downloading the PDF -->
+<div>
+    <button id="copy-url-button" style="display: none" aria-label="Copy the URL of the generated resume">
+        Copy URL
+    </button>
+    <button id="download-pdf-button" style="display: none" aria-label="Download the resume as a PDF">
+        Download as PDF
+    </button>
+</div>
+<!-- Resume Display Area -->
+<div id="resumeOutput" style="display: none;">
+    <!-- Edit Resume button will be added dynamically here -->
+</div>
+
+<!-- Buttons for Copying URL and Downloading PDF -->
+<button id="copy-url-button" >Copy Shareable Link</button>
+<button id="download-pdf-button" >Download as PDF</button>
+<script src="main.js"></script>
+
+</body>
+
+</html>

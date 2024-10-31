@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #777777;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Initial Section */
+
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 10px;
+  max-width: 90vw;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.initial {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.text-content {
+  flex: 1;
+  text-align: right;
+  padding-left: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: #f4f4f4;
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
+  color: #ffd83a;
+}
+
+.text-content h2:hover {
+  color: #ffcc01;
+}
+
+.text-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.text-content button {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text-content button:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  transform: translateY(-2px);
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  max-width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Resume Form Styles */
+
+#resumeForm {
+  background-color: #d3f9f1;
+  padding: 25px;
+  margin: 0 auto;
+  border: 1px solid #60d4a6;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60vw;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  color: #444;
+  font-weight: 500;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #60d4a6;
+}
+
+input::placeholder {
+  color: #888;
+  font-size: 12px;
+}
+
+button[type="submit"] {
+  background-color: #60d4a6;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #4ab18d;
+  transform: translateY(-2px);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #60d4a6;
+  margin: 20px 0;
+}
+
+#resumeOutput {
+  background-color: #c7f4e4;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid #60d4a6;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60vw;
+  max-width: 700px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#resumeOutput h3 {
+  margin-top: 0;
+  color: #444;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
+
+}
+
+
+
+
+/* Button Container */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Common Button Styles */
+
+button {
+  background: linear-gradient(90deg, #f44336, #ef5350);
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  width: 20vw;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+
+  #resumeForm,
+  #resumeOutput {
+    width: 80vw;
+  }
+}
